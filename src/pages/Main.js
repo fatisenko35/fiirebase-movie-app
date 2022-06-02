@@ -13,7 +13,7 @@
     const [movies, setMovies] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
     const { currentUser } = useContext(AuthContext);
-    const filtered = movies?.filter((item) => Object.keys(item).includes(searchTerm))
+    // const filtered = movies?.filter((item) => Object.keys(item).includes(searchTerm))
   
     useEffect(() => {
       getMovies(FEATURED_API);
